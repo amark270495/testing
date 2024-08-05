@@ -5,6 +5,36 @@
     <head>
         <link rel="stylesheet" href="/css/style.css">
         <style>
+            P.space
+            {
+                word-spacing: 5pt;
+            }
+            span.dot 
+            {
+                height: 10px;
+                width: 10px;
+                background-color: black;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            div.align
+            {
+                line-height: 27.5pt;
+                top: 15pt;
+                bottom: 0pt;
+            }
+            div.align1
+            {
+                line-height: 0pt;
+                top: 0pt;
+            }
+            div.align2
+            {
+                margin-left: 20pt;
+                margin-right: 20pt;
+                top: 20pt;
+                margin-top: -20pt;
+            }
             p.align
             {
                 text-align: center;
@@ -15,13 +45,53 @@
             }
             p.colour
             {
-                color: #f78157;
+                color: black;
             }
             p.style1
             {
                 font-family: Arial, Helvetica, sans-serif Handwriting, Cursive;
                 font-size: 40pt;
-                height: 10pt;
+                line-height: .5;
+            }
+            p.style3
+            {
+                font-family: Arial, Helvetica, sans-serif Handwriting, Cursive;
+                font-size: 30pt;
+                line-height: .5;
+            }
+            p.style2
+            {
+                font-family: Arial, Helvetica, sans-serif Handwriting, Cursive;
+                font-size: 15pt;
+                height: 0pt;
+            }
+            a:link 
+            {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited
+            {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover 
+            {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            a:active 
+            {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            div.sty
+            {
+                font: italic bold 20pt Arial, sans-serif;
             }
             #sidebar
             {
@@ -33,6 +103,10 @@
                 padding:0;
                 margin:0;
                 overflow:auto;
+            }
+            hr.align
+            {
+                margin-top: 0;
             }
             #page-container
             {
@@ -52,11 +126,21 @@
         <div id="sidebar">
 
         </div>
-        <div>
+        <div class="align">
             <p class="align colour style1">Amarendra Kommineni</p>
         </div>
-        <div>
-            <p class="align colour style1">System Analyst</p>
+        <div class="align1">
+            <hr class="align">
+                <p class="align colour style3">System Analyst</p>
+            </hr>
+        </div>
+        <div class="align2">
+            <hr>
+                <p class="align colour style2 space">Mobile Number : <a herf="tel:+6301780226">6301780226 <span class="dot"></span></a> Email : <a herf="mailto:ashokamarendra05@gmail.com">ashokamarendra05@gmail.com</a> <span class="dot"></span> Website : <a href="https://nice-plant-0cb97261e.5.azurestaticapps.net/">Amarendra Blog</a></p>
+            </hr>
+        </div>
+        <div class="align3">
+            <p class="align">6301780226<span> </span> ashokamarendra05@gmail.com<span></span></p>
         </div>
     </body>
 </html>
